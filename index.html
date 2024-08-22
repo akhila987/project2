@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+            width: 100%;
+        }
+        .container{
+           height: 100vh;
+           width: 90%;
+           border: 2px solid green;
+            
+        }
+       .header,.c2,.c3,.c4,.c5,.c6{
+       
+        border: 3px solid pink;
+            color: black;
+            padding: 100px;
+            margin: 2px;
+            
+       }
+       .underline{
+        width: 300px;
+       /* position: absolute;
+       left: 300px; */
+       }
+       .header{
+        background-image: url(../../pro1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        /* position: relative; */
+        width: 90vw;
+     }
+     .header{
+        display: grid;
+        grid-template-areas: "welcome ourteam"
+                            " ourwork contact";
+       grid-template-areas: "img img2"
+                            "img3 img4";                     
+     }
+                             
+ .text{
+        color: white;
+        padding-left: 350px;
+        padding-left: 25vw;
+        padding-top: 33vh;
+       
+        
+       
+      word-spacing: 3px;
+       font-style: oblique;
+ }
+       
+      .text1{
+        position: absolute;
+        color: white;
+        padding-left:0px ;
+        padding-top:0px ;
+        width: 350px;
+        font-size: 17px;
+        /* left: 300px; */
+        word-spacing: 4px;
+       
+
+    }
+      
+      .b1{
+        grid-area: welcome;
+        border: 2px solid white;
+        height: 150px;
+        width: 150px;
+        color: white;
+        position: absolute;
+        right: 480px;
+     align-content: end;
+     text-align: center;
+     top: 200px;
+      }
+      .img{
+        grid-area: img;
+        position: absolute;
+        top: 30px;
+        left: 50px;
+       
+      }
+      
+      .b2{
+        grid-area: ourteam;
+        border: 2px solid wheat;
+        height: 150px;
+        width: 150px;
+        color: white;
+       align-content: end;
+       text-align: center;  
+       position: absolute;
+       right: 300px;
+       top: 200px;
+      }
+      .img2{
+        position: absolute;
+        top: 30px;
+        left: 37px;
+       grid-area: img2;
+      }
+      
+      .b3{
+        grid-area: ourwork;
+        border: 2px solid white;
+        height: 150px;
+        width: 150px;
+        color: white;
+       align-content: end;
+       text-align: center;   
+       position: absolute;
+       right: 480px;
+       bottom: 150px;
+      }
+      .img3{
+        position: absolute;
+        height: 70px;
+        width: 70px;
+        top: 30px;
+        left: 37px;
+        grid-area: img3;
+      }
+      .b4{
+        grid-area: contact;
+        border: 2px solid white;
+        height: 150px;
+        width: 150px;
+        color: white;
+        text-align:center ;
+         align-content: end;
+         position: absolute;
+         right: 300px;
+         bottom: 150px;
+      }
+      .img4{
+        position: absolute;
+        height: 70px;
+        width: 70px;
+        top: 30px;
+        left: 37px;
+        grid-area: img4;
+      }
+      .container2{
+        background-image: url(pro1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height:100vh;
+        border: 2px solid red;
+        display: grid;
+        justify-content: center;
+      align-items: center;
+      align-content: center;
+      width: 100vw;
+      gap: 50px;
+      }
+      .container3{
+        background-image: url(pro1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 120vh;
+        border: 2px solid green;
+        display: grid;
+        justify-content: center;
+      align-items: center;
+      align-content: center;
+      width: 100vw;
+      }
+      .container4{
+        background-image: url(pro1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 120vh;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        width: 100vw;
+      }
+      .box4{
+        height:70vh;
+        width: 45vw;
+        background-color: rgba(0, 0, 0, 0.616);
+       
+      
+      }
+
+      .content4{
+        color: white;
+        display: flex;
+        padding-top: 100px;
+        font-size: 19px;
+        padding-left: 50px;
+        padding-right: 40px;
+      }
+      .box1{
+        height: 400px;
+        width: 700px;
+        background-color: #9CADC7;
+        margin-top: 100px;
+      
+       display: grid;
+       grid-template-areas: "wel1  p1"
+                            "wel1 p11"
+                            "p2 wel2"
+                            "p22 wel2";
+      }
+      .box2{
+      
+     
+      height: 70vh;
+      width: 45vw;
+      background-color: gray;
+      display: grid;
+     grid-template-areas: "ves team"
+    
+                          "ves1 team"
+                          "ves2 team";
+     
+      }
+      .ves{
+        grid-area: ves;
+        height: 150px;
+        width: 400px;
+        font-size: 17px;
+        padding-top: 70px;
+        padding-left: 25px;
+        color: white;
+      }
+      .ves1{
+        grid-area: ves1;
+       padding-left: 20px;
+        width: 400px;
+        color: white;
+        font-size: 17px;
+      }
+      .team{
+        grid-area: team;
+        height: 350px;
+        width: 170px;
+        padding-top: 70px;
+      }
+      .ves2{
+        grid-area: ves2;
+        height: 100px;
+        width: 400px;
+        padding-top: 40px;
+        padding-left: 20px;
+        color: white;
+        font-size: 17px;
+      }
+     
+      /* .button1{
+        height: 30px;
+        width: 100px;
+       margin-left: -300px;
+      
+       margin-top: -100px;
+       
+      } */
+       .more{
+        /* height: 60px;
+        width: 100px;
+       display: flex;
+       margin-top:-50px;
+       margin-right: 100px;
+       padding-top: 16px */
+      padding: 3px;
+       background-color: black;
+       color: white;
+      width: 100px;
+     height: 20px;
+     margin-bottom: 20px;
+     margin-left: 20px;
+      
+       }
+      .page3{
+        position: absolute;
+       margin-top: 30px;
+       font-size: 25px;
+       color: white;height: 100px;
+       margin-left: 20px;
+       
+        
+      }
+      
+      .wel1{
+        grid-area: wel1;
+        padding-top: 70px;
+        padding-left: 20px;
+      }
+      .p1{
+        grid-area: p1;
+        font-size: 18px;
+        padding-top: 70px;
+        width: 350px;
+        color: white;
+      }
+      .p11{
+        grid-area: p11;
+        font-size: 18px;
+        color: white;
+      }
+      .p22{
+        grid-area: p22;
+       padding-top: 10px;
+        font-size: 18px;
+        color: white;
+      }
+      .p2{
+        grid-area: p2;
+       padding-top: 10px;
+        font-size: 18px;
+       color: white;
+      }
+      .wel2{
+        grid-area: wel2;
+      padding-top: 40px;
+      padding-left: 15px;
+      }
+      .pop{
+        /* height: 100px;
+        width: 200px;
+        padding-top: 30px;
+        color: white;
+        padding-bottom: -100px; */
+        position: absolute;
+       margin-top: 30px;
+       font-size: 25px;
+       color: white;
+       margin-left: 20px;
+
+        
+      }
+      .page4{
+        height: 100px;
+        width: 200px;
+        color: white;
+        font-size: 25px;
+        padding-left: 100px;
+        margin-top: 30px;
+      }
+      .gal1{ padding-left: 20px;
+        padding-top: -30px;
+        grid-area: gal1;
+        height: 130px;
+        width: 120px;
+        padding-top: 40px;
+        padding-left: 70px;
+        
+        
+      }
+      .gal2{
+        grid-area: gal2;
+        height: 130px; 
+        width: 120px;
+        padding-left: 20px;
+      } .gal3{
+        grid-area: gal3;
+        height: 130px;
+        width: 120px;
+        padding-left: 20px;
+      } .gal4{
+        grid-area: gal4;
+        height: 130px;
+        width: 120px;
+        padding-left: 20px;
+      }
+      .container5{
+        height: 100vh;
+        background-image: url(pro1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+      }
+      .box5{
+        height: 70vh;
+        width: 45vw;
+        background-color: gray;
+        
+      }
+      .content5{
+       
+        color: white;
+        display: flex;
+        padding-top: 20px;
+        font-size: 19px;
+        padding-left: 100px;
+        padding-right: 40px;
+        
+      }
+      .page5{
+       display: flex;
+        width: 200px;
+        color: white;
+        
+        font-size: 25px;
+        padding-left: 100px;
+       padding-top: 30px;
+      }
+      .form1{
+        
+        margin-left: 100px;
+       gap: 20px;
+      }
+      .sub{
+        margin-left: 100px;
+      
+      
+      }
+      @media screen and(width<576px){
+        .box1{
+          height: 200px;
+          width: 400px;
+        }
+      }
+      
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+         <div class="text">
+          <h1>POP design</h1><br>
+           
+         <img src="underline.png" class="underline"><br><br>
+       
+        
+            <span class="text1">New HTML templates with pop up pages and use this layout for your website</span>
+          
+          </div>
+         <div class="b1">Welcome
+           <img src="https://static.vecteezy.com/system/resources/previews/000/568/450/non_2x/home-icon-vector.jpg"  height="60px" width="60px" class="img">
+         </div>
+         <div class="b2">Our team
+            <img src="https://cdn-icons-png.flaticon.com/512/11688/11688136.png" height="70px" width="70px" class="img2">
+           </div>
+         <div class="b3">Our work
+            <img src="https://static.vecteezy.com/system/resources/previews/000/351/974/original/handshake-vector-icon.jpg" class="img3">
+        </div>
+        <div class="b4">Contact
+            <img src="https://png.pngtree.com/png-vector/20190129/ourmid/pngtree-message-vector-icon-png-image_355784.jpg" class="img4">
+        </div>  
+        </div>
+      </div>
+        <div class="container2">
+          <div class="box1">
+            <h3 class="pop">Welcome to pop design</h3>
+            <div class="wel1"><img src="welcome-1.jpg" height="140px" width="300px"></div>
+            <span class="p1">Donac eu lectus ligula. Aenean pulvinar dolor et massa lacinia rhoncus sit amet sed maurls. Aliwuam dictum nibh et consequat finibus.</span>
+             <span class="p11"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. in magna mauris, malesuada ut diam ey, pelientasque fringilla ord</span>
+            
+            <span class="p2">You can feel free to use this template for your websites. Please tell your friends about Tooplate website. Thank you</span>
+                <span class="p22"> vivamus placerat in nunc eget volupat , etlam tincidunt blamdit saplen, sed posure enim.ut  eget ornare lectus</span> 
+           
+            <div class="wel2"><img src="welcome-2.jpg" height="140px" width="300px"></div> 
+
+          </div>
+        </div>
+        <div class="container3">
+          <div class="box2">
+            <spam class="page3">Background of Our Team</spam>
+           <span class="ves">Vestibulum aliquet, arct acctmsan lobortis bibe dum,justo velit efficitur lorem, at pulvinear mi justo nec lacus. Nullam et libero aliquet, luctus nunc sit
+             amet, tincidunt ligula. Sed finibus ante sed tortor cursus,  nec malesuada lectus interdum. </span>
+             <span class="ves1">
+              Sed ex turpis, vulputate in efficitur id, lobortis eget nibh. Pellentesque maximum ipsum eget velit imperdiet sodales. Suspendisse in blandit ml.
+             </span>
+             <span class="ves2">Pellentesque finibus fells risus, ut malesuada fells viversa at. Quiaque accumsan in mi non hendrerit.</span>
+            
+             <img src="team.jpg" class="team">
+             <!-- <button class="more">Read More</button> -->
+              <span class="more">Read More</span>
+          </div>
+        </div>
+        <div class="container4">
+          <div class="box4">
+            <span class="page4">Our Work</span>
+            <span class="content4">Aliquam intedum, nisl sed faucibus tempor, massa velit laoreet ipsum, et faucibus sapien magna at enim. Suspendisse a dictum torter, vel rhoncus libero. Integer at 
+              lacus velit. Nullam dapibus venenatis placerat.
+            </span>
+            <img src="gallery-img-01-tn.jpg" class="gal1">
+            <img src="gallery-img-02-tn.jpg" class="gal2">
+            <img src="gallery-img-03-tn.jpg" class="gal3">
+            <img src="gallery-img-04-tn.jpg" class="gal4">
+          </div>
+        </div>
+        <div class="container5">
+          <div class="box5">
+            <span class="page5">Contact Us</span>
+            <span class="content5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam interdum, nisl sed faucibus tempor, massa velit laoreet ipsum, et faucibus sapien magna at enim. Suspendissea dictum torter, vel rhoncus libero.
+            </span>
+            <form class="form1">
+              <input type="text" name="name" placeholder="Name">
+              <input type="text" name="email" placeholder="email"><br>
+              <textarea rows="3" cols="25">
+              </textarea>
+            </form>
+            <button class="sub">submit</button>
+          </div>
+        </div>
+    </div>
+  </div>
+    
+</body>
+</html>
